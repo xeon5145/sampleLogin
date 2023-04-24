@@ -28,6 +28,7 @@ $("#login").submit(function(event) {
     data: formData,
     success: function(data) {
       var loginStatus = data;
+      console.log(loginStatus);
       if(loginStatus == 1)
       {
         // window.location.href = "dashboard.php";

@@ -1,11 +1,11 @@
 <?php
-require_once "../config.php";
+require_once ("../config.php");
 session_start();
 
 // getting the form variables
 $username = $_POST['username'];
 $pwd = encpwd($_POST['password']);
-$loginStatus=1;
+$loginStatus=0;
 // getting the form variables
 
 // getting the users from database
