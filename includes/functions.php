@@ -13,4 +13,16 @@ function getSelect($sl_conn, $query, $fetchType)
 
     return $dbReturnArray;
 }
+
+// password encryption function----------------
+function encPwd($password)
+{
+  $normal_text = $password;
+
+  $cryptStr = $normal_text;
+  $encpassword = crypt($cryptStr,'$1$scallianisanothernameforonion$');
+
+  return $encpassword;
+}
+// password encryption function----------------
 ?>
